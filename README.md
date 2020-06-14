@@ -20,3 +20,10 @@ This project is created with the goal to help you in your journey to become a po
 * Historias de usuario
   - https://trello.com/invite/b/q1wC9Ail/422fc8b2e84ce1e801fe6f56cc6eaa34/data-lovers
   
+## Learned new things
+- Filter and Sort UI Patterns, here some very good resources:
+  - https://www.oreilly.com/library/view/mobile-design-pattern/9781449368586/ch04.html
+  - https://www.simpleusability.com/inspiration/2017/11/best-practices-using-filters-sort/#:~:text=Filtering%20is%20where%20the%20number,that%20a%20user%20has%20selected.&text=Now%20that's%20'sorted'%2C%20let's,what%20they%20are%20looking%20for.
+  - https://www.raywenderlich.com/718-6-best-practices-for-mobile-app-search-filtering
+  
+  
