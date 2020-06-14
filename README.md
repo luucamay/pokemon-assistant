@@ -17,3 +17,6 @@ This project is created with the goal to help you in your journey to become a po
   - Pokemon picture, name, and unique skill.
 * ¿Cuándo utilizan o utilizarían el producto?
   In the midle of their journey as a pokemon master.
+* Historias de usuario
+  - https://trello.com/invite/b/q1wC9Ail/422fc8b2e84ce1e801fe6f56cc6eaa34/data-lovers
+  
