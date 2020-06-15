@@ -31,6 +31,8 @@ This project is created with the goal to help you in your journey to become a po
   
 - UI websites to check *asos.com*, next.co.uk, TO DO lists (evernote, keep), Email Apps (gmail), Drive (google drive), Flights (expedia, momondo), Bookstore (kindle, goodreads), Restaurant places (yelp), Music Store (itunes), Google Search, Play Store, Pocket, Airbnb
 - How to choose colors: https://www.smashingmagazine.com/2016/04/web-developer-guide-color/
+- Check contrast: https://contrast-ratio.com/#%23444341-on-%23fff
+- Create palet colors: https://paletton.com/
 
 ## Grayscale prototype
 https://www.figma.com/file/xXfqms8N1khGQxu2puc1o7/Pokemon-Assistant?node-id=0%3A1
