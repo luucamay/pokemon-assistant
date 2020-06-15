@@ -26,21 +26,28 @@ header {
   grid-area: hd;
   background-color: var(--primary-color);
   display: flex;
-  align-items: center;
   justify-content: center;
   padding: 1.5em;
+  position: fixed;
+  width: 100%;
 }
 
 main {
-  padding: 8px;
   grid-area: main;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 24px;
+  padding: 8px;
 }
 
 footer {
   grid-area: ft;
+  padding: 16px;
+  font-size: 12px;
+  text-align: center;
+  background-color: var(--primary-color-white);
+  border-top: 1px solid var(--primary-color);
 }
 
 #pokeball {
