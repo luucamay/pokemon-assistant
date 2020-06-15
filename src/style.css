@@ -1,0 +1,54 @@
+@import "./variables.css";
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+
+.hide {
+  display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--text-font);
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 50px 3fr auto;
+  grid-template-areas:
+    "hd"
+    "main"
+    "ft";
+}
+
+header {
+  grid-area: hd;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5em;
+}
+
+main {
+  padding: 8px;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  grid-area: ft;
+}
+
+#pokeball {
+  padding: 8px;
+  height: 68px;
+}
+
+header h1 {
+  font-size: 24px;
+  font-family: 'Faster One', cursive;
+}
