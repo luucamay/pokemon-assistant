@@ -22,10 +22,19 @@ This project is created with the goal to help you in your journey to become a po
   
 ## Learned new things
 - Filter and Sort UI Patterns, here some very good resources:
+
   - https://www.oreilly.com/library/view/mobile-design-pattern/9781449368586/ch04.html
-  - https://www.simpleusability.com/inspiration/2017/11/best-practices-using-filters-sort/#:~:text=Filtering%20is%20where%20the%20number,that%20a%20user%20has%20selected.&text=Now%20that's%20'sorted'%2C%20let's,what%20they%20are%20looking%20for.
-  - https://www.raywenderlich.com/718-6-best-practices-for-mobile-app-search-filtering
-- UI websites to check *asos.com*, next.co.uk, TO DO lists (evernote, keep), Email Apps (gmail), Drive (google drive), Flights (expedia, momondo), Bookstore (kindle, goodreads), Restaurant places (yelp), Music Store (itunes), Google Search, Play Store, Pocket, Airbnb
   
+  - https://www.simpleusability.com/inspiration/2017/11/best-practices-using-filters-sort/#:~:text=Filtering%20is%20where%20the%20number,that%20a%20user%20has%20selected.&text=Now%20that's%20'sorted'%2C%20let's,what%20they%20are%20looking%20for.
+  
+  - https://www.raywenderlich.com/718-6-best-practices-for-mobile-app-search-filtering
+  
+- UI websites to check *asos.com*, next.co.uk, TO DO lists (evernote, keep), Email Apps (gmail), Drive (google drive), Flights (expedia, momondo), Bookstore (kindle, goodreads), Restaurant places (yelp), Music Store (itunes), Google Search, Play Store, Pocket, Airbnb
+- How to choose colors: https://www.smashingmagazine.com/2016/04/web-developer-guide-color/
+- Check contrast: https://contrast-ratio.com/#%23444341-on-%23fff
+- Create palet colors: https://paletton.com/
+
+## Grayscale prototype
+https://www.figma.com/file/xXfqms8N1khGQxu2puc1o7/Pokemon-Assistant?node-id=0%3A1
   
   
