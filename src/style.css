@@ -115,8 +115,48 @@ main > p {
   padding: 8px 0;
 }
 
+.pokemon-card:hover {
+  background-color: var(--primary-color-lightest);
+}
+
 .pokemon-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.more-info-pokemon {
+  position: absolute;
+  box-sizing: border-box;
+  width: 75vw;
+  background-color: var(--primary-color-lightest);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.more-info-pokemon * {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.more-info-pokemon h1 {
+  background-color: var(--accent-color); 
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.pokemon-structure {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;  
 }
