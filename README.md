@@ -37,5 +37,8 @@ This project is created with the goal to help you in your journey to become a po
 
 ## High fidelity prototype
 https://www.figma.com/file/xXfqms8N1khGQxu2puc1o7/Pokemon-Assistant?node-id=0%3A1
-  
+
+## Questions
+- Is it ok use HTML element ids as global object properties: https://lists.whatwg.org/pipermail/whatwg-whatwg.org/2011-April/031109.html
+
   
