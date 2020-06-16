@@ -38,8 +38,29 @@ const renderMainView = () => {
 
 const showInfoPokemon = (event) => {
   // TODO make sure not already showing info of a pokemon
-  console.log(event.currentTarget);
-
+  const pokemonSelected = event.currentTarget;
+  const pokemonObject = pokemonArray.find(x => x.id == pokemonSelected.id);
+  const infoCardPokemon = document.createElement('div');
+  infoCardPokemon.classList.add('more-info-pokemon');
+  const cardTitle = document.createElement('h1');
+  cardTitle.textContent = `About ${pokemonObject.name}`;
+  const cardImage = document.createElement('img');
+  cardImage.src = pokemonObject.img;
+  const infoDetailedText = document.createElement('div');
+  infoDetailedText.innerHTML = `<h2 class="title">type</h2>
+                                <p>${pokemonObject.type.join(', ')}</p>
+                                <h2 class="title">weaknesses</h2>
+                                <p>${pokemonObject.weaknesses.join(', ')}</p>
+                                <div class="pokemon-structure">
+                                  <p class="title">heigth</p>
+                                  <p>${pokemonObject.height}</p>
+                                  <p class="title">width</p>
+                                  <p>${pokemonObject.weight}</p>`;
+                                  
+  infoCardPokemon.appendChild(cardTitle);
+  infoCardPokemon.appendChild(cardImage);
+  infoCardPokemon.appendChild(infoDetailedText);
+  mainView.appendChild(infoCardPokemon);
 }
 
 pokemonQuantity.textContent = pokemonArray.length;
