@@ -10,6 +10,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: var(--text-font);
+  color: var(--primary-color-black);
 }
 
 body {
@@ -38,7 +39,8 @@ main {
   flex-direction: column;
   align-items: center;
   margin-top: 24px;
-  padding: 8px;
+  padding: 8px 0;
+  border: solid red;
 }
 
 footer {
@@ -58,4 +60,40 @@ footer {
 header h1 {
   font-size: 24px;
   font-family: 'Faster One', cursive;
+}
+
+#filters {
+  display: flex;
+
+}
+
+select {
+  display: block;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+	max-width: 100%;
+  height: 100%;
+  background-color: var(--primary-color-white);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color-darkest);
+  font-weight: bold;
+}
+
+select:hover, select:focus {
+  border: 4px solid var(--primary-color);
+}
+
+option {
+  background-color: var(--primary-color-white);
+}
+
+#filters {
+  background-color: var(--primary-color-white);
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
 }

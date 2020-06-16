@@ -33,8 +33,9 @@ This project is created with the goal to help you in your journey to become a po
 - How to choose colors: https://www.smashingmagazine.com/2016/04/web-developer-guide-color/
 - Check contrast: https://contrast-ratio.com/#%23444341-on-%23fff
 - Create palet colors: https://paletton.com/
+- Style a select element: https://www.filamentgroup.com/lab/select-css.html
 
-## Grayscale prototype
+## High fidelity prototype
 https://www.figma.com/file/xXfqms8N1khGQxu2puc1o7/Pokemon-Assistant?node-id=0%3A1
   
   

@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-with, initial-scale=1">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <header>
-      <h1>
-        Pokemon Assistant
-      </h1>
-    </header>
-    <main>
-      <p>Get to know the pokemons <br> you will be training with!</p>
-      <img id="pokeball" src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Pokeball.png" alt="pokeball"/>
-    </main>
-    <footer>
-      Created with love by @luucamay
-    </footer>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-with, initial-scale=1">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <header>
+    <h1>
+      Pokemon Assistant
+    </h1>
+  </header>
+  <main>
+    <p>Get to know the pokemons <br> you will be training with!</p>
+    <img id="pokeball" src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Pokeball.png" alt="pokeball" />
+    <div id="filters">
+      <select id="sort-by-select" name="sort-by">
+          <option value="default">Sort by default</option>
+          <option value="dog">Biggest to smallest</option>
+          <option value="cat">Smallest to biggest</option>
+        </select>
+      <select name="all-types" id="filter-by-types">
+          <option value="all-types">All types</option>
+        </select>
+    </div>
+  </main>
+  <footer>
+    Created with love by @luucamay
+  </footer>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
