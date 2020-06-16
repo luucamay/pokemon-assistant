@@ -1,5 +1,5 @@
 @import "./variables.css";
-@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Faster+One&display=swap");
 
 .hide {
   display: none;
@@ -11,6 +11,10 @@
   box-sizing: border-box;
   font-family: var(--text-font);
   color: var(--primary-color-black);
+}
+
+p {
+  font-size: 14px;
 }
 
 body {
@@ -27,8 +31,8 @@ header {
   grid-area: hd;
   background-color: var(--primary-color);
   display: flex;
-  justify-content: center;
-  padding: 1.5em;
+  align-items: center;
+  padding: 0;
   position: fixed;
   width: 100%;
 }
@@ -38,9 +42,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 24px;
   padding: 8px 0;
-  border: solid red;
 }
 
 footer {
@@ -54,17 +56,22 @@ footer {
 
 #pokeball {
   padding: 8px;
-  height: 68px;
+  height: 48px;
 }
 
 header h1 {
   font-size: 24px;
-  font-family: 'Faster One', cursive;
+  font-family: "Faster One", cursive;
 }
 
 #filters {
+  position: fixed;
+  top: 48px;
+  background-color: var(--primary-color-white);
+  width: 100%;
+  height: 48px;
   display: flex;
-
+  justify-content: space-between;
 }
 
 select {
@@ -74,7 +81,7 @@ select {
   margin: 0;
   box-sizing: border-box;
   width: 100%;
-	max-width: 100%;
+  max-width: 100%;
   height: 100%;
   background-color: var(--primary-color-white);
   border: 1px solid var(--primary-color);
@@ -82,14 +89,33 @@ select {
   font-weight: bold;
 }
 
-select:hover, select:focus {
+select:hover,
+select:focus {
   border: 4px solid var(--primary-color);
 }
 
-#filters {
-  background-color: var(--primary-color-white);
-  width: 100%;
-  height: 48px;
+#pokemons-quantity {
+  font-weight: bolder;
+  color: var(--accent-color);
+}
+
+main > p {
+  margin-top: 60px;
+}
+
+.pokemon-name {
+  color: var(--secondary-color);
+}
+
+.pokemon-card {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 154px;
+}
+
+#pokemon-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
