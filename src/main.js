@@ -9,6 +9,8 @@ const pokemonArray = data.pokemon;
 const pokemonQuantity = document.querySelector('#pokemonQuantity');
 const mainView = document.querySelector('main');
 
+let showingInfoPokemon = false;
+
 const renderMainView = () => {
   const pokemonCards = document.createElement('div');
   pokemonCards.classList.add('pokemon-cards');
@@ -37,6 +39,7 @@ const renderMainView = () => {
 }
 
 const showInfoPokemon = (event) => {
+  // disable 
   // TODO make sure not already showing info of a pokemon
   const pokemonSelected = event.currentTarget;
   const pokemonObject = pokemonArray.find(x => x.id == pokemonSelected.id);
@@ -56,7 +59,7 @@ const showInfoPokemon = (event) => {
                                   <p>${pokemonObject.height}</p>
                                   <p class="title">width</p>
                                   <p>${pokemonObject.weight}</p>`;
-                                  
+
   infoCardPokemon.appendChild(cardTitle);
   infoCardPokemon.appendChild(cardImage);
   infoCardPokemon.appendChild(infoDetailedText);
