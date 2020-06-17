@@ -8,6 +8,7 @@ console.log(example);
 const pokemonArray = data.pokemon;
 const pokemonQuantity = document.querySelector('#pokemonQuantity');
 const mainView = document.querySelector('main');
+const modalContainer = document.getElementById("myModal");
 
 let showingInfoPokemon = false;
 
@@ -43,6 +44,7 @@ const showInfoPokemon = (event) => {
   // TODO make sure not already showing info of a pokemon
   const pokemonSelected = event.currentTarget;
   const pokemonObject = pokemonArray.find(x => x.id == pokemonSelected.id);
+  
   const infoCardPokemon = document.createElement('div');
   infoCardPokemon.classList.add('more-info-pokemon');
   const cardTitle = document.createElement('h1');
@@ -63,8 +65,20 @@ const showInfoPokemon = (event) => {
   infoCardPokemon.appendChild(cardTitle);
   infoCardPokemon.appendChild(cardImage);
   infoCardPokemon.appendChild(infoDetailedText);
-  mainView.appendChild(infoCardPokemon);
+  modalContainer.innerHTML = '';
+  modalContainer.appendChild(infoCardPokemon);
+  modalContainer.style.display = 'flex';
+}
+
+const closeInfoPokemon = (event) => {
+
+  console.log(modalContainer);
+  if (event.target == modalContainer) {
+    modalContainer.style.display = "none";
+  }
 }
 
 pokemonQuantity.textContent = pokemonArray.length;
 renderMainView();
+
+modalContainer.addEventListener('click', closeInfoPokemon);
