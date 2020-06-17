@@ -126,10 +126,12 @@ main > p {
 }
 
 .modal {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 150px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
