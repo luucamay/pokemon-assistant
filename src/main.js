@@ -10,8 +10,6 @@ const pokemonQuantity = document.querySelector('#pokemonQuantity');
 const mainView = document.querySelector('main');
 const modalContainer = document.getElementById("myModal");
 
-let showingInfoPokemon = false;
-
 const renderMainView = () => {
   const pokemonCards = document.createElement('div');
   pokemonCards.classList.add('pokemon-cards');
@@ -71,8 +69,6 @@ const showInfoPokemon = (event) => {
 }
 
 const closeInfoPokemon = (event) => {
-
-  console.log(modalContainer);
   if (event.target == modalContainer) {
     modalContainer.style.display = "none";
   }
