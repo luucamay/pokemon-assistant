@@ -1,6 +1,6 @@
 import { sortPokemon, anotherExample } from '../src/data.js';
 
-const pokemonsToSort = [
+const pokemonsDummyData = [
   {
     "id": 3,
     "name": "Venusaur",
@@ -50,7 +50,7 @@ describe('sortPokemon', () => {
   });
 
   it('returns `${sortedPokemons}`', () => {
-    expect(sortPokemon(pokemonsToSort)).toEqual(sortedPokemons);
+    expect(sortPokemon(pokemonsDummyData)).toEqual(sortedPokemons);
   });
 });
 
