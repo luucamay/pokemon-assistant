@@ -42,4 +42,6 @@ https://www.figma.com/file/xXfqms8N1khGQxu2puc1o7/Pokemon-Assistant?node-id=0%3A
 ## Questions
 - Is it ok use HTML element ids as global object properties: https://lists.whatwg.org/pipermail/whatwg-whatwg.org/2011-April/031109.html
 
+## Topics to check in dept to study after
+- Inside sort functions for arrays at least the one that sets the difference for values
   
