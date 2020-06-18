@@ -5,6 +5,5 @@ export const sortPokemon = (pokemonArray) => {
   return pokemonArray;
 };
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+export const filterPokemon = (pokemonArray, type) => pokemonArray.filter((pokemon) =>
+  pokemon.type.includes(type));
