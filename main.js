@@ -97,16 +97,9 @@ const closeInfoPokemon = (event) => {
 }
 
 const sortData = (event) => {
-  if (event.target.value === 'frequency') {
-    sortPokemon(pokemonArray);
+    sortPokemon(pokemonArray, event.target.value);
     mainView.removeChild(pokemonCards);
     renderMainView();
-  } else {
-    pokemonArray = originalPokemonArray;
-    mainView.removeChild(pokemonCards);
-    renderMainView();
-  }
-
 }
 
 const filterData = (event) => {
