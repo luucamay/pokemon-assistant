@@ -1,17 +1,20 @@
-import { example } from './data.js';
+import { sortPokemon } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
-console.log(example);
 
-const pokemonArray = data.pokemon;
+let pokemonArray = data.pokemon;
+const originalPokemonArray = Array.from(pokemonArray);
 const pokemonQuantity = document.querySelector('#pokemonQuantity');
 const mainView = document.querySelector('main');
-const modalContainer = document.getElementById("myModal");
+const modalContainer = document.querySelector('#myModal');
+const selectSortBy = document.querySelector('#sort-by-select');
+let pokemonCards;
 
 const renderMainView = () => {
-  const pokemonCards = document.createElement('div');
+  pokemonCards = document.createElement('div');
+  pokemonCards.id = 'pokemonContainer';
   pokemonCards.classList.add('pokemon-cards');
 
   pokemonArray.forEach(element => {
@@ -22,17 +25,19 @@ const renderMainView = () => {
     const pokemonImg = document.createElement('img');
     const pokemonName = document.createElement('p');
     const pokemonType = document.createElement('p');
+    const pokemonSpawn = document.createElement('p');
     pokemonCard.appendChild(pokemonImg);
     pokemonCard.appendChild(pokemonName);
     pokemonCard.appendChild(pokemonType);
+    pokemonCard.appendChild(pokemonSpawn);
     // TODO Another way to avoid create an event listener for each pokemon card
     pokemonCard.addEventListener('click', showInfoPokemon);
     pokemonImg.src = element.img;
     pokemonName.textContent = element.name;
     pokemonType.textContent = element.type.join(' | ');
+    pokemonSpawn.innerHTML = `Spawn frequency: <strong>${element.avg_spawns}</strong>`;
     pokemonCards.appendChild(pokemonCard);
   });
-
   mainView.appendChild(pokemonCards);
 
 }
@@ -74,7 +79,22 @@ const closeInfoPokemon = (event) => {
   }
 }
 
+const sortData = (event) => {
+  if (event.target.value === 'frequency') {
+    sortPokemon(pokemonArray);
+    mainView.removeChild(pokemonCards);
+    renderMainView();
+  } else {
+    pokemonArray = originalPokemonArray;
+    mainView.removeChild(pokemonCards);
+    renderMainView();
+  }
+  
+}
+
 pokemonQuantity.textContent = pokemonArray.length;
 renderMainView();
 
 modalContainer.addEventListener('click', closeInfoPokemon);
+
+selectSortBy.addEventListener('change', sortData);
