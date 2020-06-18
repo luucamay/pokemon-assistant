@@ -8,7 +8,8 @@ console.log(example);
 const pokemonArray = data.pokemon;
 const pokemonQuantity = document.querySelector('#pokemonQuantity');
 const mainView = document.querySelector('main');
-const modalContainer = document.getElementById("myModal");
+const modalContainer = document.querySelector('#myModal');
+const selectSortBy = document.querySelector('#sort-by-select');
 
 const renderMainView = () => {
   const pokemonCards = document.createElement('div');
@@ -74,7 +75,14 @@ const closeInfoPokemon = (event) => {
   }
 }
 
+const sortData = (event) => {
+  console.log(event.target.value);
+  
+}
+
 pokemonQuantity.textContent = pokemonArray.length;
 renderMainView();
 
 modalContainer.addEventListener('click', closeInfoPokemon);
+
+selectSortBy.addEventListener('change', sortData);
