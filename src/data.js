@@ -17,5 +17,6 @@ const addSpawns = (runningTotal, avg_spawns) => runningTotal + avg_spawns;
 export const computeStats = (pokemonArray) => {
   const spawnsFrequency = pokemonArray.map(getAvgSpawns);
   const spawnsTotalSum = spawnsFrequency.reduce(addSpawns, 0);
-  return spawnsTotalSum / spawnsFrequency.length;
+  const average = spawnsTotalSum / spawnsFrequency.length;
+  return Math.round(average * 100) / 100;
 }
