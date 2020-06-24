@@ -10,12 +10,12 @@ export const sortPokemon = (pokemonArray, sortOrder) => {
 export const filterPokemon = (pokemonArray, type) => pokemonArray.filter((pokemon) =>
   pokemon.type.includes(type));
 
-const getPopularity = (pokemon) => pokemon.avg_spawns;
+const getAvgSpawns = (pokemon) => pokemon.avg_spawns;
 
 const addSpawns = (runningTotal, avg_spawns) => runningTotal + avg_spawns;
 
 export const computeStats = (pokemonArray) => {
-  const spawnsFrequency = pokemonArray.map(getPopularity);
+  const spawnsFrequency = pokemonArray.map(getAvgSpawns);
   const spawnsTotalSum = spawnsFrequency.reduce(addSpawns, 0);
   return spawnsTotalSum / spawnsFrequency.length;
 }
