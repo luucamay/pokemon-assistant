@@ -1,4 +1,4 @@
-import { sortPokemon, filterPokemon } from './data.js';
+import { sortPokemon, filterPokemon, computeStats } from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/pokemon/pokemon.js';
 // import data from './data/rickandmorty/rickandmorty.js';
@@ -8,6 +8,7 @@ let pokemonArray = data.pokemon;
 let pokemonCards;
 const originalPokemonArray = Array.from(pokemonArray);
 const pokemonQuantity = document.querySelector('#pokemonQuantity');
+const averageSpawn = document.querySelector('#averageSpawn');
 const mainView = document.querySelector('main');
 const modalContainer = document.querySelector('#myModal');
 const selectSortBy = document.querySelector('#sort-by-select');
@@ -109,11 +110,13 @@ const filterData = (event) => {
     pokemonArray = originalPokemonArray;
   }
   pokemonQuantity.textContent = pokemonArray.length;
+  averageSpawn.textContent = computeStats(pokemonArray);
   mainView.removeChild(pokemonCards);
   renderMainView();
 }
 
 pokemonQuantity.textContent = pokemonArray.length;
+averageSpawn.textContent = computeStats(pokemonArray);
 renderMainView();
 renderFilterOptions();
 
