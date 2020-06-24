@@ -1,4 +1,4 @@
-import { sortPokemon, filterPokemon } from '../src/data.js';
+import { sortPokemon, filterPokemon, computeStats } from '../src/data.js';
 
 const pokemonsDummyData = [
   {
@@ -66,21 +66,21 @@ const sortedPokemons = [
 
 const filteredPokemons = [
   {
-    "id": 5,
-    "name": "Charmeleon",
-    "spawn_chance": 0.012,
-    "avg_spawns": 1.2,
-    "spawn_time": "19:00",
-    "type": [
-      "Fire"
-    ]
-  },
-  {
     "id": 4,
     "name": "Charmander",
     "spawn_chance": 0.253,
     "avg_spawns": 25.3,
     "spawn_time": "08:45",
+    "type": [
+      "Fire"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Charmeleon",
+    "spawn_chance": 0.012,
+    "avg_spawns": 1.2,
+    "spawn_time": "19:00",
     "type": [
       "Fire"
     ]
@@ -100,6 +100,8 @@ const filteredPokemons2 = [
     ]
   }
 ];
+
+const averageSpawnFrequency = 9.4;
 
 describe('sortPokemon', () => {
   it('is a function', () => {
@@ -127,6 +129,17 @@ describe('filterPokemon', () => {
 
   it('returns `${filteredPokemons2} Poison`', () => {
     expect(filterPokemon(pokemonsDummyData, 'Poison')).toEqual(filteredPokemons2);
+  });
+
+});
+
+describe('computeStats', () => {
+  it('is a function', () => {
+    expect(typeof computeStats).toBe('function');
+  });
+
+  it('returns `${averageSpawnFrequency}` ', () => {
+    expect(computeStats(pokemonsDummyData)).toBe(averageSpawnFrequency);
   });
 
 });

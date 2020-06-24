@@ -35,6 +35,7 @@ This project is created with the goal to help you in your journey to become a po
 - Create palet colors: https://paletton.com/
 - Style a select element: https://www.filamentgroup.com/lab/select-css.html
 - How to create new things: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
+- calculate avergae: https://jrsinclair.com/articles/2019/five-ways-to-average-with-js-reduce/
 
 ## High fidelity prototype
 https://www.figma.com/file/xXfqms8N1khGQxu2puc1o7/Pokemon-Assistant?node-id=0%3A1
